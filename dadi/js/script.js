@@ -7,21 +7,10 @@ var computerNumber = Math.floor(Math.random() * 6) + 1;
 console.log("Il numero generato per il computer è: " + computerNumber);
 
 //Verifico chi fa il punteggio più alto
-var winner;
-var pari;
 if ( userNumber > computerNumber ) {
-    winner = userNumber;
-} else if ( userNumber < computerNumber ) {
-    winner = computerNumber;
-} else {
-    winner = pari;
-}
-
-//Verifico chi ha vinto
-if ( winner == userNumber ) {
     console.log("complimenti, hai vinto!");
-} else if ( winner == computerNumber ) {
+} else if ( userNumber < computerNumber ) {
     console.log("Mi dispiace, hai perso!");
-} else ( winner == pari ) { 
+} else {
     console.log("Avete giocato lo stesso numero");
 }
