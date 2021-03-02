@@ -7,6 +7,7 @@ var usersMail = ["0@gmail.com", "1@gmail.com", "2@gmail.com", "3@gmail.com", "4@
 
 for (var i = 0; i < usersMail.length; i++) {
     if (email == usersMail[i]) {
+        console.log ("puoi accedere");
         user = email;
     }
 }
